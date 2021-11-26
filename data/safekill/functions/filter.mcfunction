@@ -21,7 +21,6 @@ tag @e[type=villager] remove safekill_kill_tmp
 
 # filter vheicles
 tag @e[type=boat] remove safekill_kill_tmp
-
 tag @e[type=chest_minecart] remove safekill_kill_tmp
 tag @e[type=command_block_minecart] remove safekill_kill_tmp
 tag @e[type=furnace_minecart] remove safekill_kill_tmp
@@ -44,3 +43,6 @@ tag @e[type=trident] remove safekill_kill_tmp
 
 # filter data entities
 tag @e[type=marker] remove safekill_kill_tmp
+
+# filter ender dragon in the end
+execute in the_end as @e[type=ender_dragon,limit=1] run tag @e[type=ender_dragon] remove safekill_kill_tmp
