@@ -7,6 +7,9 @@ tag @a remove safekill_kill_tmp
 # filter all invulnerable entities
 tag @e[nbt={"Invulnerable":true}] remove safekill_kill_tmp
 
+# filter all entities with persistence required tag
+tag @e[nbt={"PersistenceRequired":true}] remove safekill_kill_tmp
+
 # filter all persistent entities
 tag @e[tag=safekill_persist] remove safekill_kill_tmp
 
